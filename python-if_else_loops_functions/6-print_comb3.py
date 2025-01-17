@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-for num1 in range(0, 9):
-    for num2 in range(0, 10):
-        if num1 == num2 or num1 == 1 and num2 == 0:
-            continue
+
+for num1 in range(0, 10):
+    for num2 in range(num1 + 1, 10):
+        if (num1 * 10 + num2) == 89:
+            print("{:02}".format(num1 * 10 + num2), end="")
         else:
-            print(f"{num1}{num2}", end=", ")
-        if num1 == 8 and num2 == 9:
-            print(f"{num1}{num2}", end="")
+            print("{:02}, ".format(num1 * 10 + num2), end="")
+print()
