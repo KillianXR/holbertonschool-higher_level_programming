@@ -1,0 +1,32 @@
+>>> from 5-text_indentation import text_indentation
+>>> text_indentation("Hello. How are you? I am fine: thank you.")
+Hello
+
+How are you?
+
+I am fine: thank you.
+
+>>> text_indentation("Lorem ipsum dolor sit amet. Quis custodiet? Sed ut perspiciatis.")
+Lorem ipsum dolor sit amet
+
+Quis custodiet?
+
+Sed ut perspiciatis.
+
+>>> text_indentation("No punctuation here")
+No punctuation here
+
+>>> text_indentation("This is a test. Testing, one, two, three.")
+This is a test
+
+Testing, one, two, three.
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation("")
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
