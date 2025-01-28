@@ -34,4 +34,4 @@ class Square():
             print("")
         else:
             for count in range(self.__size):
-               print("#" * self.__size)
+                print("#" * self.__size)
