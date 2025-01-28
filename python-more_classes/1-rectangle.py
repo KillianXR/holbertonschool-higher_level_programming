@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-This is the rectangle module who initialize a square class
+This is the rectangle module who initialize a rectangle class.
 """
 
 
@@ -28,12 +28,12 @@ class Rectangle():
 
     @property
     def height(self):
-        """getter for width"""
+        """getter for height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """setter for width"""
+        """setter for height"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
