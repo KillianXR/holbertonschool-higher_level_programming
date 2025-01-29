@@ -6,11 +6,14 @@ This is the rectangle module who initialize a rectangle class.
 
 
 class Rectangle():
+    """instances tracker"""
+    number_of_instances = 0
     """initialize a square's class with a private class atribute"""
     def __init__(self, width=0, height=0):
         """"initialize the width"""
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -52,6 +55,7 @@ class Rectangle():
             return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
+        """"print a representation of the rectangle with diez"""
         total = ""
         if self.__height == 0 or self.width == 0:
             return total
@@ -66,3 +70,4 @@ class Rectangle():
 
     def __del__(self):
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
