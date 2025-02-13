@@ -3,7 +3,13 @@
 create a representation of pascal triangle
 n: number of line
 """
+
+
 def pascal_triangle(n):
+    """
+    create a representation of pascal triangle
+    n: number of line
+    """
     if n <= 0:
         return []
 
