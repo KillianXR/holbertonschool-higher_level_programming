@@ -15,4 +15,3 @@ def pascal_triangle(n):
         triangle.append(new_line)
 
     return triangle
-    
