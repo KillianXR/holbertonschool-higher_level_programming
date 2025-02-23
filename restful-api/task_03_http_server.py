@@ -2,12 +2,13 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
-"""HTTP request handler"""
+"""This module sets up a simple HTTP server and request handler"""
 
 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
-    """"""
+    """HTTP request handler class"""
     def do_GET(self):
+        """handle get request"""
         if self.path == '/data':
             self.send_response(200)
             self.send_header('Content-type', 'application/json')
