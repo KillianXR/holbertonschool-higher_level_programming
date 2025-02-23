@@ -1,0 +1,22 @@
+Http status codes:
+
+100 Continue
+Description: The server is ready to receive the rest of the request.
+Use case: Sending large data in a POST request and waiting for the server to acknowledge before sending the body.
+
+2. 200 OK
+Description: The request was successful, and the server returned the requested data.
+Use case: Fetching a webpage or data from an API.
+
+3. 300 Multiple Choices
+Description: Multiple options are available for the requested resource.
+Use case: Choosing between different language versions of a page.
+
+4. 404 Not Found
+Description: The requested resource could not be found on the server.
+Use case: Accessing a non-existent page on a website.
+
+5. 500 Internal Server Error
+Description: The server encountered an unexpected error.
+Use case: A server-side bug or malfunction preventing the request from being processed.
+
